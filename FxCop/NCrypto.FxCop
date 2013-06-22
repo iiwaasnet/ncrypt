@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="1.3" Name="NCrypto Project">
+ <ProjectOptions>
+  <SharedProject>False</SharedProject>
+  <Stylesheet Apply="True">d:\program files\microsoft fxcop 1.30\Xml\FxCopReport.Xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="False" />
+  <PermitAnalysis>True</PermitAnalysis>
+  <EnableControlFlowAnalysis>True</EnableControlFlowAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>100</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>10</RuleExceptionsThreshold>
+  <Spelling Locale="en-us" />
+ </ProjectOptions>
+ <Targets>
+  <AssemblyReferenceDirectories>
+   <Directory>D:\Documents and Settings\Hernan\My Documents\My Open Source Projects\NCrypto v1.2\NCrypto\bin\Debug\</Directory>
+  </AssemblyReferenceDirectories>
+  <Target Name="D:\Documents and Settings\Hernan\My Documents\My Open Source Projects\NCrypto\NCrypto\bin\Debug\NCrypto.Security.Cryptography.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\ComRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="1.3" LastAnalysis="2004-04-12 22:24:33Z">
+  <Targets>
+   <Target Name="D:\Documents and Settings\Hernan\My Documents\My Open Source Projects\NCrypto\NCrypto\bin\Debug\NCrypto.Security.Cryptography.dll">
+    <Modules>
+     <Module Name="ncrypto.security.cryptography.dll">
+      <Namespaces>
+       <Namespace Name="NCrypto.Security.Cryptography">
+        <Classes>
+         <Class Name="WinAccessHelper">
+          <Constructors>
+           <Constructor Name=".cctor()">
+            <Messages>
+             <Message Status="Excluded" Created="2004-04-12 15:43:01Z">
+              <Rule TypeName="DoNotDeclareExplicitStaticConstructors" />
+              <Issues>
+               <Issue Certainty="90" Level="CriticalWarning">
+                <SourceCode Path="D:\Documents and Settings\Hernan\My Documents\My Open Source Projects\NCrypto\NCrypto" File="WinAccessHelper.cs" Line="78" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>WinAccessHelper</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Constructor>
+          </Constructors>
+          <Methods>
+           <Method Name="LogonUser(System.Net.NetworkCredential,NCrypto.Security.Cryptography.WinAccessHelper+LogonType):System.Security.Principal.WindowsIdentity">
+            <Parameters>
+             <Parameter Name="1">
+              <Messages>
+               <Message ID="logontype" Status="Excluded" Created="2004-04-12 15:43:01Z">
+                <Rule TypeName="ParameterNamesShouldBeSpelledCorrectly" />
+                <Issues>
+                 <Issue Certainty="25" Level="CriticalWarning">
+                  <SourceCode Path="D:\Documents and Settings\Hernan\My Documents\My Open Source Projects\NCrypto\NCrypto" File="WinAccessHelper.cs" Line="201" />
+                  <Resolution>
+                   <Data>
+                    <Items>
+                     <Item>logontype</Item>
+                     <Item>logontype</Item>
+                    </Items>
+                   </Data>
+                  </Resolution>
+                 </Issue>
+                </Issues>
+               </Message>
+              </Messages>
+             </Parameter>
+            </Parameters>
+           </Method>
+          </Methods>
+         </Class>
+         <Class Name="CryptoHelper">
+          <Constructors>
+           <Constructor Name=".cctor()">
+            <Messages>
+             <Message Status="Excluded" Created="2004-04-11 08:32:09Z">
+              <Rule TypeName="DoNotDeclareExplicitStaticConstructors" />
+              <Issues>
+               <Issue Certainty="90" Level="CriticalWarning">
+                <SourceCode Path="d:\documents and settings\hernan\my documents\my open source projects\ncrypto\ncrypto" File="cryptohelper.cs" Line="44" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>CryptoHelper</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Constructor>
+          </Constructors>
+          <Methods>
+           <Method Name="VerifySaltedHash(System.String,System.String,System.Security.Cryptography.HashAlgorithm):System.Boolean">
+            <Parameters>
+             <Parameter Name="1">
+              <Messages>
+               <Message ID="saltedhash" Status="Excluded" Created="2004-04-12 13:07:15Z">
+                <Rule TypeName="ParameterNamesShouldBeSpelledCorrectly" />
+                <Issues>
+                 <Issue Certainty="25" Level="CriticalWarning">
+                  <SourceCode Path="d:\documents and settings\hernan\my documents\my open source projects\ncrypto\ncrypto" File="cryptohelper.cs" Line="931" />
+                  <Resolution>
+                   <Data>
+                    <Items>
+                     <Item>saltedhash</Item>
+                     <Item>saltedhash</Item>
+                    </Items>
+                   </Data>
+                  </Resolution>
+                 </Issue>
+                </Issues>
+               </Message>
+              </Messages>
+             </Parameter>
+            </Parameters>
+           </Method>
+           <Method Name="Decrypt(System.Byte[],System.Security.Cryptography.RSAParameters,System.Boolean):System.Byte[]">
+            <Parameters>
+             <Parameter Name="2">
+              <Messages>
+               <Message ID="oaep" Status="Excluded" Created="2004-04-11 08:32:09Z">
+                <Rule TypeName="ParameterNamesShouldBeSpelledCorrectly" />
+                <Issues>
+                 <Issue Certainty="25" Level="CriticalWarning">
+                  <SourceCode Path="d:\documents and settings\hernan\my documents\my open source projects\ncrypto\ncrypto" File="cryptohelper.cs" Line="580" />
+                  <Resolution>
+                   <Data>
+                    <Items>
+                     <Item>oaep</Item>
+                     <Item>oaep</Item>
+                    </Items>
+                   </Data>
+                  </Resolution>
+                 </Issue>
+                </Issues>
+               </Message>
+              </Messages>
+             </Parameter>
+            </Parameters>
+           </Method>
+           <Method Name="VerifySaltedHash(System.String,System.String):System.Boolean">
+            <Parameters>
+             <Parameter Name="1">
+              <Messages>
+               <Message ID="saltedhash" Status="Excluded" Created="2004-04-11 08:32:09Z">
+                <Rule TypeName="ParameterNamesShouldBeSpelledCorrectly" />
+                <Issues>
+                 <Issue Certainty="25" Level="CriticalWarning">
+                  <SourceCode Path="d:\documents and settings\hernan\my documents\my open source projects\ncrypto\ncrypto" File="cryptohelper.cs" Line="907" />
+                  <Resolution>
+                   <Data>
+                    <Items>
+                     <Item>saltedhash</Item>
+                     <Item>saltedhash</Item>
+                    </Items>
+                   </Data>
+                  </Resolution>
+                 </Issue>
+                </Issues>
+               </Message>
+              </Messages>
+             </Parameter>
+            </Parameters>
+           </Method>
+           <Method Name="Encrypt(System.Byte[],System.Security.Cryptography.RSAParameters,System.Boolean):System.Byte[]">
+            <Parameters>
+             <Parameter Name="2">
+              <Messages>
+               <Message ID="oaep" Status="Excluded" Created="2004-04-11 08:32:09Z">
+                <Rule TypeName="ParameterNamesShouldBeSpelledCorrectly" />
+                <Issues>
+                 <Issue Certainty="25" Level="CriticalWarning">
+                  <SourceCode Path="d:\documents and settings\hernan\my documents\my open source projects\ncrypto\ncrypto" File="cryptohelper.cs" Line="309" />
+                  <Resolution>
+                   <Data>
+                    <Items>
+                     <Item>oaep</Item>
+                     <Item>oaep</Item>
+                    </Items>
+                   </Data>
+                  </Resolution>
+                 </Issue>
+                </Issues>
+               </Message>
+              </Messages>
+             </Parameter>
+            </Parameters>
+           </Method>
+           <Method Name="VerifySaltedHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithm):System.Boolean">
+            <Parameters>
+             <Parameter Name="1">
+              <Messages>
+               <Message ID="saltedhash" Status="Excluded" Created="2004-04-12 13:07:15Z">
+                <Rule TypeName="ParameterNamesShouldBeSpelledCorrectly" />
+                <Issues>
+                 <Issue Certainty="25" Level="CriticalWarning">
+                  <SourceCode Path="d:\documents and settings\hernan\my documents\my open source projects\ncrypto\ncrypto" File="cryptohelper.cs" Line="954" />
+                  <Resolution>
+                   <Data>
+                    <Items>
+                     <Item>saltedhash</Item>
+                     <Item>saltedhash</Item>
+                    </Items>
+                   </Data>
+                  </Resolution>
+                 </Issue>
+                </Issues>
+               </Message>
+              </Messages>
+             </Parameter>
+            </Parameters>
+           </Method>
+          </Methods>
+          <Properties>
+           <Property Name="RsaInstance">
+            <Messages>
+             <Message ID="Rsa" Status="Excluded" Created="2004-04-11 08:32:09Z">
+              <Rule TypeName="MemberNamesShouldBeSpelledCorrectly" />
+              <Issues>
+               <Issue Certainty="50" Level="CriticalWarning">
+                <SourceCode Path="d:\documents and settings\hernan\my documents\my open source projects\ncrypto\ncrypto" File="cryptohelper.cs" Line="101" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>RsaInstance</Item>
+                   <Item>Rsa</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Property>
+           <Property Name="DefaultCspParameters">
+            <Messages>
+             <Message ID="Csp" Status="Excluded" Created="2004-04-11 08:32:09Z">
+              <Rule TypeName="MemberNamesShouldBeSpelledCorrectly" />
+              <Issues>
+               <Issue Certainty="50" Level="CriticalWarning">
+                <SourceCode Path="d:\documents and settings\hernan\my documents\my open source projects\ncrypto\ncrypto" File="cryptohelper.cs" Line="89" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>DefaultCspParameters</Item>
+                   <Item>Csp</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Property>
+          </Properties>
+         </Class>
+         <Class Name="CryptographicPermission">
+          <Constructors>
+           <Constructor Name=".ctor(NCrypto.Security.Cryptography.CryptographicPermissionFlags)">
+            <Parameters>
+             <Parameter Name="0">
+              <Messages>
+               <Message ID="permflag" Status="Excluded" Created="2004-04-11 08:32:09Z">
+                <Rule TypeName="ParameterNamesShouldBeSpelledCorrectly" />
+                <Issues>
+                 <Issue Certainty="25" Level="CriticalWarning">
+                  <SourceCode Path="D:\Documents and Settings\Hernan\My Documents\My Open Source Projects\NCrypto\NCrypto" File="CryptographyPermission.cs" Line="89" />
+                  <Resolution>
+                   <Data>
+                    <Items>
+                     <Item>permflag</Item>
+                     <Item>permflag</Item>
+                    </Items>
+                   </Data>
+                  </Resolution>
+                 </Issue>
+                </Issues>
+               </Message>
+              </Messages>
+             </Parameter>
+            </Parameters>
+           </Constructor>
+          </Constructors>
+         </Class>
+         <Class Name="Win32Native">
+          <ValueTypes>
+           <ValueType Name="CRYPTPROTECT_PROMPTSTRUCT">
+            <Messages>
+             <Message Status="Excluded" Created="2004-04-12 22:24:33Z">
+              <Rule TypeName="TypesAllocatingUnmanagedResourcesImplementIDisposable" />
+              <Issues>
+               <Issue Certainty="50" Level="CriticalError">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>hwndApp</Item>
+                   <Item>IntPtr</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+              <Notes>
+               <User Name="hernan">
+                <Note ID="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </ValueType>
+           <ValueType Name="CREDUI_INFO">
+            <Messages>
+             <Message Status="Excluded" Created="2004-04-12 22:24:33Z">
+              <Rule TypeName="TypesAllocatingUnmanagedResourcesImplementIDisposable" />
+              <Issues>
+               <Issue Certainty="50" Level="CriticalError">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>hwndParent</Item>
+                   <Item>IntPtr</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+              <Notes>
+               <User Name="hernan">
+                <Note ID="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </ValueType>
+           <ValueType Name="CRYPTOAPI_BLOB">
+            <Messages>
+             <Message Status="Excluded" Created="2004-04-12 22:24:33Z">
+              <Rule TypeName="TypesAllocatingUnmanagedResourcesImplementIDisposable" />
+              <Issues>
+               <Issue Certainty="50" Level="CriticalError">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>pbData</Item>
+                   <Item>IntPtr</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+              <Notes>
+               <User Name="hernan">
+                <Note ID="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </ValueType>
+          </ValueTypes>
+         </Class>
+        </Classes>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Notes>
+   <User Name="hernan">
+    <Note ID="0" Modified="2004-04-12 22:28:32Z">struct (ValueType) implementation</Note>
+   </User>
+  </Notes>
+  <Rules>
+   <Rule TypeName="DoNotDeclareExplicitStaticConstructors">
+    <Name>Do not declare explicit static constructors</Name>
+    <Description>Static fields should be initialized when declared.</Description>
+    <LongDescription>Initializing static data in explicit static constructors results in less performant code.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/Performance/DoNotDeclareExplicitStaticConstructors.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="90">CriticalWarning</MessageLevel>
+    <File Name="PerformanceRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="MemberNamesShouldBeSpelledCorrectly">
+    <Name>Member names should consist of correctly spelled words</Name>
+    <Description>The individual words that make up a member name should not be abbreviated and should be spelled correctly.</Description>
+    <LongDescription>If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/UsageRules/MemberSpelling.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="50">CriticalWarning</MessageLevel>
+    <File Name="UsageRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="ParameterNamesShouldBeSpelledCorrectly">
+    <Name>Parameter names should consist of correctly spelled words</Name>
+    <Description>The individual words that make up a parameter name should not be abbreviated and should be spelled correctly.</Description>
+    <LongDescription>If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/UsageRules/ParameterSpelling.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="25">CriticalWarning</MessageLevel>
+    <File Name="UsageRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="TypesAllocatingUnmanagedResourcesImplementIDisposable">
+    <Name>Types that allocate unmanaged resources implement IDisposable</Name>
+    <Description>Types that allocate unmanaged resources should implement IDisposable to allow callers to release those resources on demand.</Description>
+    <LongDescription> Failure to implement IDisposable can result in unmanaged resources being unavailable or underutilized.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/DesignRules/TypesAllocatingUnmanagedResources.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="50">CriticalError</MessageLevel>
+    <File Name="DesignRules.dll" Version="1.30.0.0" />
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>
